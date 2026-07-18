@@ -1,0 +1,32 @@
+{
+  "_comment": "Bu dosyayı config.json olarak kopyalayın ve kendi bilgilerinizle doldurun.",
+
+  "virustotal_api_key": "VIRUSTOTAL_API_KEY",
+  "urlscan_api_key": "",
+
+  "risk_threshold": 60,
+  "redirect_timeout": 5,
+  "scan_interval_seconds": 180,
+  "scan_max_results": 30,
+  "auto_start_scan": true,
+  "warning_label_id": "Label_PHISHSCAN_WARNING",
+
+  "_whitelist_warning": "⚠️gmail.com' gibi genel sağlayıcıları buraya EKLEMEYİN — saldırganın o sağlayıcı üzerinden gönderdiği phishing'i de atlamanıza sebep olur. Yalnızca gerçekten güvendiğiniz kurumsal domain'leri ekleyin.",
+  "whitelist_domains": [
+  ],
+
+  "_nlp_comment": "Secure by Default: 'disabled' iken dışarıya sıfır veri çıkar. 'local' TF-IDF modelini yerelde çalıştırır (önerilir). 'remote_api' HuggingFace kullanır, veri dışarı çıkar.",
+  "nlp_provider": "disabled",
+  "nlp_model_path": "data/phishscan_nlp.pkl",
+  "nlp_grey_zone_min": 35,
+  "nlp_grey_zone_max": 59,
+
+  "huggingface_api_key": "",
+  "huggingface_model_id": "mrm8488/bert-tiny-finetuned-sms-spam-detection",
+  "nlp_remote_max_chars": 200,
+  "nlp_sanitize_before_send": true,
+
+  "_telegram_comment": "Boş bırakılırsa Telegram tamamen devre dışı kalır, sistem yalnızca log dosyasına yazar.",
+  "telegram_bot_token": "",
+  "telegram_allowed_user_id": 0
+}

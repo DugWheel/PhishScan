@@ -1,0 +1,14 @@
+# PhishGuard — NLP Katmanı Bağımlılıkları (isteğe bağlı)
+# Kurulum: pip install -r requirements-nlp.txt
+#
+# Yalnızca config.json'da nlp_provider: "local" veya "remote_api"
+# seçildiğinde gereklidir.
+#
+# nlp_provider: "disabled" (varsayılan) seçiliyse bu dosyayı
+# kurmanıza gerek yoktur.
+
+# ── Yerel model (nlp_provider: "local") ─────────────────────────────────────
+scikit-learn>=1.4.0
+
+# ── Remote API (nlp_provider: "remote_api") ──────────────────────────────────
+# requests zaten requirements.txt'te mevcut; ek bağımlılık yok.

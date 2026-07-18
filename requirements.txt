@@ -1,0 +1,28 @@
+# PhishGuard — Python bağımlılıkları
+# Kurulum: pip install -r requirements.txt
+
+# E-posta ayrıştırma
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# DNS sorguları (SPF / DKIM / DMARC)
+dnspython>=2.6.0
+
+# HTTP istekleri
+requests>=2.31.0
+
+# Google Gmail API
+google-auth>=2.29.0
+google-auth-oauthlib>=1.2.0
+google-api-python-client>=2.127.0
+
+# Telegram Bot (v2'de eklendi)
+python-telegram-bot>=20.7
+
+# Microsoft Graph API (Outlook / 365) — isteğe bağlı
+msal>=1.28.0
+
+# Yardımcı
+python-dateutil>=2.9.0
+tldextract>=5.1.0
+pytest-mock
