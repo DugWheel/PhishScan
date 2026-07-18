@@ -14,6 +14,7 @@
 
 * [Features](#features)
 * [Architecture](#architecture)
+* [Tech Stack](#tech-stack)
 * [Project Structure](#project-structure)
 * [Quick Start](#quick-start)
 * [Configuration](#configuration)
@@ -82,7 +83,21 @@ Incoming Email (Gmail API)
  ```
 
 ---
+## Tech Stack
 
+| Category | Technology |
+|----------|------------|
+| Language | Python 3.11+ |
+| Email Processing | email (stdlib) |
+| HTML Parsing | BeautifulSoup4 |
+| DNS | dnspython |
+| Gmail | Google Gmail API |
+| Machine Learning | scikit-learn |
+| Threat Intelligence | VirusTotal API |
+| URL Analysis | URLScan.io |
+| Telegram | python-telegram-bot |
+| Deployment | Linux VPS + systemd |
+| Testing | pytest |
 
  ##  Project Structure
 
@@ -104,10 +119,7 @@ phishscan/
 │   ├── phishing_simulator.py
 │   └── spoofed_eml_generator.py
 │
-├── data/
-│   ├── vt_cache.json
-│   ├── scanned_ids.json
-│   └── model/
+├── data/                            # Auto-generated at runtime (cache, scanned IDs, NLP model)
 │
 ├── output/
 ├── config.example.json
