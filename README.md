@@ -10,21 +10,29 @@
 ![Telegram](https://img.shields.io/badge/Telegram-Bot-blue?logo=telegram)
 
 ---
-## 📚 Table of Contents
+##  Table of Contents
 
-- Features
-- Architecture
-- Tech Stack
-- Project Structure
-- Quick Start
-- Configuration
-- Detection Engine
-- Telegram Bot
-- Testing
-- Development Tools
-- Deployment
-- Security
-- License
+* [Features](#features)
+* [Architecture](#architecture)
+* [Tech Stack](#tech-stack)
+* [Project Structure](#project-structure)
+* [Quick Start](#quick-start)
+* [Configuration](#configuration)
+* [Detection Engine](#detection-engine)
+  * [Detection Pipeline](#detection-pipeline)
+  * [Header Analysis](#header-analysis)
+  * [Content Analysis](#content-analysis)
+  * [URL Analysis](#url-analysis)
+  * [Decision Engine](#decision-engine)
+  * [Local Machine Learning](#local-machine-learning)
+* [Telegram Bot](#telegram-bot)
+  * [Supported Commands](#supported-commands)
+  * [Notification Policy](#notification-policy)
+* [Testing](#testing)
+* [Development Tools](#development-tools)
+* [Deployment](#deployment)
+* [Security](#security)
+* [License](#license)
 
 ##  Features
 
@@ -93,7 +101,7 @@ Incoming Email (Gmail API)
 | Testing | pytest |
 
 
- ## 📁 Project Structure
+ ##  Project Structure
 
 ```text
 phishscan/
@@ -128,13 +136,13 @@ phishscan/
 
 ---
 
-# 🚀 Quick Start
+#  Quick Start
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/phishscan.git
-cd phishscan
+git clone https://github.com/DugWheel/PhishScan.git
+cd PhishScan
 ```
 
 ### 2. Create a virtual environment
@@ -350,7 +358,7 @@ This approach improves accuracy while keeping false positives low.
 ---
 ---
 
-# 📱 Telegram Bot
+#  Telegram Bot
 
 PhishScan includes a built-in Telegram bot for remote monitoring and basic system control.
 
@@ -479,7 +487,7 @@ Before running PhishScan in production, consider the following recommendations:
 
 ---
 
-# 📄 License
+#  License
 
 This project is licensed under the **MIT License**.
 
