@@ -366,11 +366,11 @@ PhishScan includes a built-in Telegram bot for remote monitoring and basic syste
 
 | Command | Description |
 |---------|-------------|
-| `/status` | Display scanner status and statistics |
-| `/startscan` | Resume email scanning |
-| `/stopscan` | Pause email scanning |
-| `/threats` | Show the latest quarantined emails |
-| `/help` | Display available commands |
+| `/durum` | Display scanner status and statistics |
+| `/baslat` | Resume email scanning |
+| `/durdur` | Pause email scanning |
+| `/son_tehditler` | Show the latest quarantined emails |
+| `/yardim` | Display available commands |
 
 ## Notification Policy
 
